@@ -113,7 +113,6 @@ def test():
            Total_loss_PI0 / cnt_sample, Total_loss_PI / cnt_sample
 
 
-# 测试所用时间
 def stat_time(method):
     model.eval()
     Total_loss_0 = 0

@@ -1052,7 +1052,7 @@ if __name__ == "__main__":
 
     # get_gudhi_time()
     # sys.exit()
-
+    
     if format in ['REDDIT-BINARY', 'REDDIT-MULTI-5K', 'REDDIT-MULTI-12K']:
         construct_gc_bench_dataset(dataset_path=dataset_path, dataset_name=format, has_node_attr=False)
     if format == 'citation':
