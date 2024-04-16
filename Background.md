@@ -41,7 +41,7 @@ Figure 2. Example of VP complex of graphs
 
 The similarity between the VP complex and the original graph on static undirected graphs greatly facilitates persistent homology analysis.However, simplicial complexes fundamentally represent topological shapes and lack the weighted and directed properties of graphs (more intuitively, simplicial complexes consist only of "lines" and do not incorporate the concept of weighted, directed edges). Hence, it is necessary to employ Dowker complexes, which are specifically designed for directed, weighted graphs.
 
-Figure 3 illustrates the construction process of a Dowker source complex in a simple structure. Intuitively, a Dowker source complex captures the directed structures within a network; for example, if two nodes ( $v_1, v_2$ ) share a common source node ( $v_4$ ), they can form a one-dimensional complex. Conversely, in a Dowker sink complex, if two nodes share the same target node, they can also form a one-dimensional complex. Therefore, the "lines" in Dowker complexes and the edges in graphs represent fundamentally different concepts and forms.
+Figure 3 illustrates the construction process of a Dowker source complex in a simple structure. Intuitively, a Dowker source complex captures the directed structures within a network; for example, if two nodes  $v_1$ and  $v_2$  share a common source node ( $v_4$ ), they can form a one-dimensional complex. Conversely, in a Dowker sink complex, if two nodes share the same target node, they can also form a one-dimensional complex. Therefore, the "lines" in Dowker complexes and the edges in graphs represent fundamentally different concepts and forms.
 
 ![](./doc/dowker_complex.png)
 
