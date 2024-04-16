@@ -50,3 +50,7 @@ Algorithm 1: Algorithm to construct the source and sink line graphs from a direc
 
 ![](doc/algo2.png)
 Algorithm 2: Dynamic Neural Dowker Network (DNDN) forward propagation algorithm
+
+## Section 6 CONCLUSION
+
+In conclusion, our study introduces the Dynamic Neural Dowker Network (DNDN), a pioneering framework designed to tackle the computational complexities associated with applying persistent homology to dynamic graphs. Through a novel integration of line graph transformations and a Source-Sink Line Graph Neural Network (SSLGNN), coupled with a duality edge fusion mechanism, DNDN effectively captures and approximates the Dowker persistent homology results of dynamic networks. Our experimental evaluation, spanning both static and dynamic datasets, demonstrates DNDN's superior performance in approximating true persistent homology, highlighting its potential to enhance graph classification tasks. Notably, the method showcases remarkable transferability, proving its efficacy in learning topological features from smaller graphs and applying them to larger counterparts with enhanced efficiency. **In the future, we will focus on two critical directions to address the current limitations of DNDN: (1) extending the dynamic Dowker filtration method to node-level tasks by constructing dynamic neighborhood subgraphs of nodes to study their higher-order evolutionary patterns, and (2) building on the approximation of 0-dimensional and 1-dimensional persistence diagrams (PDs), exploring methods to approximate higher-dimensional PDs.**
