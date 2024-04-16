@@ -19,13 +19,13 @@ The Dowker Complex is a type of simplicial complex specifically designed for dir
 
 ![](doc/eq1.png)
 
-**Where $\sigma$ represents a simplex composed of given nodes. The formula implies that for all nodes $v_b$ in $\sigma$, there exists a directed edge $e_{b a}$ from $v_b$ to $v_a$ with a weight less than or equal to $\delta$. This means that $v_b$ is a source node that meets the filtration criteria. Specifically, the Dowker $\delta$-sink complex connects nodes $(v_b)$ that share a common target node $(v_a)$, forming a simplicial complex. This linkage is based on the criterion that each $v_b$ is directed towards $v_a$ with an edge weight satisfying the $\delta$ condition.**
+**Where $\sigma$ represents a simplex composed of given nodes. The formula implies that for all nodes $v_b$ in $\sigma$, there exists a directed edge $e_{b a}$ from $v_b$ to $v_a$ with a weight less than or equal to $\delta$. This means that $v_b$ is a source node that meets the filtration criteria. Specifically, the Dowker $\delta$ -sink complex connects nodes $(v_b)$ that share a common target node $(v_a)$, forming a simplicial complex. This linkage is based on the criterion that each $v_b$ is directed towards $v_a$ with an edge weight satisfying the $\delta$ condition.**
 
-Similarly, the Dowker $\delta$-source complex is symmetrically defined with the roles of source and target reversed:
+Similarly, the Dowker $\delta$ -source complex is symmetrically defined with the roles of source and target reversed:
 
 ![](doc/eq2.png)
 
-With increasing $\delta$, we naturally obtain a sequence of Dowker complexes, known as the Dowker $\delta$-sink filtration or Dowker $\delta$-source filtration. This filtration process allows for the examination of the evolving topological structure of the graph as the parameter $\delta$ changes, providing insights into the hierarchical and directional properties of the graph.
+With increasing $\delta$, we naturally obtain a sequence of Dowker complexes, known as the Dowker $\delta$ -sink filtration or Dowker $\delta$ -source filtration. This filtration process allows for the examination of the evolving topological structure of the graph as the parameter $\delta$ changes, providing insights into the hierarchical and directional properties of the graph.
 
 **Dowker Duality.** For a given directed graph $\mathcal{G}_d$, any threshold value $\delta \in \mathbb{R}$, and dimension $k\geq 0$, the persistent modules induced by the Dowker sink filtration and the Dowker source filtration are isomorphic. This statement reflects a fundamental property of Dowker complexes in topological data analysis. The duality of Dowker complexes necessitates that, in designing neural networks, we must consider both the distinctions and the eventual consistency between source Dowker complexes and sink Dowker complexes.
 

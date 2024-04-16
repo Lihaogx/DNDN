@@ -21,6 +21,7 @@ We provide a more intuitive example, as shown in Figure 1, where we calculate pe
 The graph-like structure induced by point cloud data, composed of simplices, is referred to as a simplicial complex (in this case, the Vietoris-Rips Complex). The persistence diagram below illustrates the results of calculating the homology groups and Betti numbers of the simplicial complex at different filtration values, where $b_0$ represents the 0-dimensional information and $b_1$ the 1-dimensional information of the simplicial complex.
 
 ![](./doc/ph.png)
+
 Figure 1. Example of persistent homology
 
 We see that the different filter function and the construction of simplicial complexes represent different interpretations of data's topological structure. The simplicial complex constructed in Figure 1 illustrates the complex multivariate distance relationships among points in a point cloud. 
@@ -40,14 +41,14 @@ Figure 2. Example of VP complex of graphs
 
 The similarity between the VP complex and the original graph on static undirected graphs greatly facilitates persistent homology analysis.However, simplicial complexes fundamentally represent topological shapes and lack the weighted and directed properties of graphs (more intuitively, simplicial complexes consist only of "lines" and do not incorporate the concept of weighted, directed edges). Hence, it is necessary to employ Dowker complexes, which are specifically designed for directed, weighted graphs.
 
-Figure 3 illustrates the construction process of a Dowker source complex in a simple structure. Intuitively, a Dowker source complex captures the directed structures within a network; for example, if two nodes ($v_1, v_2$) share a common source node ($v_4$), they can form a one-dimensional complex. Conversely, in a Dowker sink complex, if two nodes share the same target node, they can also form a one-dimensional complex. Therefore, the "lines" in Dowker complexes and the edges in graphs represent fundamentally different concepts and forms.
+Figure 3 illustrates the construction process of a Dowker source complex in a simple structure. Intuitively, a Dowker source complex captures the directed structures within a network; for example, if two nodes ( $v_1, v_2$ ) share a common source node ( $v_4$ ), they can form a one-dimensional complex. Conversely, in a Dowker sink complex, if two nodes share the same target node, they can also form a one-dimensional complex. Therefore, the "lines" in Dowker complexes and the edges in graphs represent fundamentally different concepts and forms.
 
 ![](./doc/dowker_complex.png)
 
 Figure 3. Example of Dowker source complex of graphs
 
 
-This approach effectively captures the directed relationships within networks. Using a time-related filtration value, we can accurately characterize the features of dynamic weighted graphs. Figure 4 uses a toy example to demonstrate the sensitivity of Dowker complexes to time information and edge direction, which are aspects that VP complexes cannot capture. This is because from the perspective of static undirected graphs, $G_a, G_b, G_c$ appear as identical graphs.
+This approach effectively captures the directed relationships within networks. Using a time-related filtration value, we can accurately characterize the features of dynamic weighted graphs. Figure 4 uses a toy example to demonstrate the sensitivity of Dowker complexes to time information and edge direction, which are aspects that VP complexes cannot capture. This is because from the perspective of static undirected graphs, $ G_a, G_b, G_c $ appear as identical graphs.
 
 ![](./doc/filtration.png)
 
