@@ -33,3 +33,6 @@ You can modify the necessary configurations in 'config.yml'.
 ## Custom Datasets
 
 'utils.process_data' is the method we provide for processing your custom datasets. Its main functionalities include generating dynamic Dowker filtration ground truths and constructing dynamic graph classification datasets, etc. You can refer to the function 'construct_sp_dataset()' for constructing custom datasets.
+
+## Data
+Some data has been uploaded here: https://drive.google.com/drive/folders/1LpBPT6PG4RyOSkr_MgxWuIYn3iI1RO4Q?usp=drive_link"
