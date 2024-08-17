@@ -1,3 +1,4 @@
 *.pkl filter=lfs diff=lfs merge=lfs -text
 .vscode/
 __pycache__/
+/home/lh/DNDN/utils/__pycache__
