@@ -1,13 +1,15 @@
 # DNDN
 
 Implementation for the paper "Dynamic Neural Dowker Networks: Approximating Persistent Homology in Dynamic Graphs."
-@inproceedings{li2024dynamic,
+
+
+@inproceedings{li2024dynamic,\
   title={Dynamic Neural Dowker Network: Approximating Persistent Homology in Dynamic Directed Graphs},\
   author={Li, Hao and Jiang, Hao and Jiajun, Fan and Ye, Dongsheng and Du, Liang},\
   booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},\
   pages={1554--1564},\
   year={2024}\
-}\
+}
 
 ## Requirements
 
